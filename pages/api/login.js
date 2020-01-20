@@ -23,7 +23,7 @@ export default async (req, res) => {
       });
       res.status(200).json(token);
     } else {
-      res.status(401).send("Wrong credentials");
+      res.status(401).send("Invalid credentials");
     }
     //send that token to the client
   } catch (error) {
